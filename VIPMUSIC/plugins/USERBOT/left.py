@@ -7,11 +7,9 @@ from pyrogram import Client, filters
 from pyrogram.types import ChatMemberUpdated, InlineKeyboardButton, InlineKeyboardMarkup
 
 random_photo = [
-    "https://telegra.ph/file/1949480f01355b4e87d26.jpg",
-    "https://telegra.ph/file/3ef2cc0ad2bc548bafb30.jpg",
-    "https://telegra.ph/file/a7d663cd2de689b811729.jpg",
-    "https://telegra.ph/file/6f19dc23847f5b005e922.jpg",
-    "https://telegra.ph/file/2973150dd62fd27a3a6ba.jpg",
+    "https://telegra.ph/file/b38f75b2f4ca8f243450d.jpg",
+    "https://telegra.ph/file/b38f75b2f4ca8f243450d.jpg",
+    "https://telegra.ph/file/b38f75b2f4ca8f243450d.jpg",
 ]
 
 bg_path = "VIPMUSIC/assets/userinfo.png"
@@ -53,7 +51,7 @@ async def get_userinfo_img(
     return path
 
 
-@Client.on_chat_member_updated(filters.group, group=-34)
+@Client.on_chat_member_updated(filters.group, group=-24)
 async def member_has_left(client: Client, member: ChatMemberUpdated):
     if (
         not member.new_chat_member
