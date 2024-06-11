@@ -57,7 +57,7 @@ SHAYRI = [
 SHAYRI_COMMAND = ["gf", "bf", "shayri", "sari", "shari", "love"]
 
 
-@Client.on_message(filters.command(SHAYRI_COMMAND, prefixes=["."]) & filters.group)
+@Client.on_message(filters.command(SHAYRI_COMMAND) & filters.group)
 async def help(client: Client, message: Message):
     await message.reply_text(
         text=random.choice(SHAYRI),
@@ -65,10 +65,10 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "✨𝚂𝚄𝙿𝙿𝙾𝚁𝚃✨", url=f"https://t.me/TG_FRIENDSS"
+                        "✨𝚂𝚄𝙿𝙿𝙾𝚁𝚃✨", url=f"https://t.me/grandxmasti"
                     ),
                     InlineKeyboardButton(
-                        "✨𝙾𝙵𝙵𝙸𝙲𝙴✨", url=f"https://t.me/VIP_CREATORS"
+                        "✨𝙾𝙵𝙵𝙸𝙲𝙴✨", url=f"https://t.me/kittyxupdates"
                     ),
                 ]
             ]
@@ -76,7 +76,7 @@ async def help(client: Client, message: Message):
     )
 
 
-@Client.on_message(filters.command(SHAYRI_COMMAND, prefixes=["."]) & filters.private)
+@Client.on_message(filters.command(SHAYRI_COMMAND) & filters.private)
 async def help(client: Client, message: Message):
     await message.reply_text(
         text=random.choice(SHAYRI),
@@ -84,10 +84,10 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "✨𝚂𝚄𝙿𝙿𝙾𝚁𝚃✨", url=f"https://t.me/TG_FRIENDSS"
+                        "✨𝚂𝚄𝙿𝙿𝙾𝚁𝚃✨", url=f"https://t.me/grandxmasti"
                     ),
                     InlineKeyboardButton(
-                        "✨𝙾𝙵𝙵𝙸𝙲𝙴✨", url=f"https://t.me/VIP_CREATORS"
+                        "✨𝙾𝙵𝙵𝙸𝙲𝙴✨", url=f"https://t.me/Kittyxupdates"
                     ),
                 ]
             ]
